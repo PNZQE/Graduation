@@ -1,0 +1,419 @@
+@charset "utf-8";
+//头部、导航栏、尾部、登录注册表单、回到顶部按钮的样式
+
+@-webkit-keyframes bounceInRight {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(3000px, 0, 0);
+    transform: translate3d(3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(-25px, 0, 0);
+    transform: translate3d(-25px, 0, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(-5px, 0, 0);
+    transform: translate3d(-5px, 0, 0);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes bounceInRight {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(3000px, 0, 0);
+    transform: translate3d(3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(-25px, 0, 0);
+    transform: translate3d(-25px, 0, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(-5px, 0, 0);
+    transform: translate3d(-5px, 0, 0);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+//头部
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5px;
+    padding-left: 13%;
+    padding-right: 13%;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 999;
+    background: white;
+    overflow: hidden;
+    text-align: center;
+    
+    .webForm{
+        border: 1px solid #333;
+        border-radius: 8px;
+        padding: 3px 10px;
+        position: relative;
+        text-align: left;
+        width: 35%;
+        max-width: 250px;
+        form{
+            button{
+                border: none;
+                outline: none;
+                background: transparent;
+                cursor: pointer;
+                position: absolute;
+                right: 5px;
+                top: 2px;
+            }
+            input{
+                border: none;
+                outline: none;
+                width: 90%;
+                font-size: 14px;
+            }
+        }
+    }
+    .webLogo{
+        display: inline-block;
+        width: 130px;
+        
+        .header_img{
+            width: 130px;
+            display: inline-block;
+            transition: all 0.5s;
+        }
+    }
+    .webRegist{
+        display: inline-block;
+        width: 130px;
+        color: black;
+        font-size: 18px;
+        transition: all 0.3s;
+        
+        i{
+            font-size: 20px;
+            margin-right: 5px;
+            vertical-align: middle;
+        }
+        i:hover{
+            cursor: pointer;
+        }
+    }
+    .webRegist:hover{
+        color: skyblue;
+    }
+}
+
+//导航栏
+.main{
+    padding-top: 100px;
+    nav{
+        margin-bottom: 20px;
+        .navUl{
+            width: 100%;
+            padding-left: 20%;
+            padding-right: 20%;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            
+            >li{
+                width: 25%;
+                position: relative;
+                >a{
+                    display: inline-block;
+                    width: 100%;
+                    color: skyblue;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    font-size: 18px;
+                }
+                >a:after{
+                    content: "";
+                    display: block;
+                    width: 80%;
+                    height: 2px;
+                    background: skyblue;
+                    margin: 0 auto;
+                    margin-top: 6px;
+                    transform: scale(0);
+                    transition: transform 1s;
+                }
+                
+                .navLiUl{
+                    // display: none;
+                    background: blanchedalmond;
+                    z-index: 99;
+                    position: absolute;
+                    top: 38px;
+                    left: 0;
+                    width: 100%;
+                    transform: scale(0);
+                    transition: transform 0.5s;
+                    >li{
+                        width: 100%;
+                        
+                        >a{
+                            display: inline-block;
+                            width: 100%;
+                            color: skyblue;
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+                        }
+                    }
+                    >li:hover{
+                        >a{
+                            color: white;
+                            background: lightblue;
+                        }
+                    }
+                }
+            }
+            >li:hover{
+                >a:after{
+                    transform: scale(1);
+                }
+                .navLiUl{
+                    // display: block;
+                    transform: scale(1);
+                }
+            }
+        }
+    }
+}
+
+//尾部
+footer{
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: gainsboro;
+    
+    .link{
+        width: 80%;
+        margin: 0 auto;
+        padding-bottom: 20px;
+        border-bottom: 1px solid darkgray;
+        
+        .link_title{
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .link_list{
+            display: flex;
+            flex-wrap: wrap;
+            
+            >a{
+                display: inline-block;
+                width: 8%;
+                margin-bottom: 10px;
+                text-align: center;
+            }
+        }
+    }
+    .about{
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        
+        ul{
+            display: flex;
+            
+            li{
+                width: 10%;
+                a{
+                    display: inline-block;
+                }
+            }
+            li::after{
+                content: "";
+                display: inline-block;
+                width: 2px;
+                height: 10px;
+                background: black;
+                margin-left: 25%;
+            }
+            li:last-of-type::after{
+                display: none;
+            }
+        }
+    }
+    .intro{
+        width: 80%;
+        margin: 0 auto;
+        
+        >p:first-of-type{
+            margin-bottom: 10px;
+        }
+    }
+}
+
+//回到顶部按钮
+.top{
+    position: fixed;
+    right: 0;
+    bottom: 30px;
+    background: rgba(0,0,0,0.3);
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    vertical-align: middle;
+    display: none;
+    transition: all 0.5s;
+    
+    >i{
+        color: white;
+    }
+}
+.top:hover{
+    cursor: pointer;
+    background: rgba(0,0,0,0.5);
+}
+
+//登录注册表单
+.regist{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    z-index: 99;
+    display: none;
+    animation: bounceInRight 1s;
+    
+    .form{
+        width: 400px;
+        height: 250px;
+        background: #FFF;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        
+        .close{
+            position: absolute;
+            right: 10px;
+            top: 5px;
+        }
+        form{
+            width: 70%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            label{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 10px;
+                font-weight: 400;
+                
+                >input{
+                    width: 64%;
+                    padding: 2px 10px;
+                    border: none;
+                    outline: none;
+                    border: 1px solid #666;
+                    border-radius: 4px;
+                }
+            }
+            .verity{
+                display: flex;
+                justify-content: flex-end;
+                .verifycode{
+                    padding: 2px 4px;
+                    border: 1px solid skyblue;
+                    font-size: 14px;
+                    margin-right: 10px;
+                    cursor: pointer;
+                    color: darkgray;
+                }
+                .verifycode:hover{
+                    background: skyblue;
+                    color: #fff;
+                }
+                >input{
+                    width: 40%;
+                    padding: 2px 10px;
+                    border: none;
+                    outline: none;
+                    border: 1px solid #666;
+                    border-radius: 4px;
+                }
+            }
+            .form_btn{
+                width: 100%;
+                text-align: center;
+                margin-top: 15px;
+                >a{
+                    display: inline-block;
+                    background: skyblue;
+                    color: #fff;
+                    padding: 2px 4px;
+                    border-radius: 4px;
+                    margin: 0 10px;
+                }
+                >input{
+                    display: inline-block;
+                    background: skyblue;
+                    color: #fff;
+                    padding: 2px 4px;
+                    border-radius: 4px;
+                    margin: 0 10px;
+                }
+            }
+        }
+    } 
+    .regist_form{
+        display: none;
+    }
+}

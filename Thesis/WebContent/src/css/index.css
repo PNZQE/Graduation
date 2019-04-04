@@ -1,0 +1,388 @@
+@charset "UTF-8";
+@-webkit-keyframes bounceInRight {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(3000px, 0, 0);
+    transform: translate3d(3000px, 0, 0); }
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(-25px, 0, 0);
+    transform: translate3d(-25px, 0, 0); }
+  75% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0); }
+  90% {
+    -webkit-transform: translate3d(-5px, 0, 0);
+    transform: translate3d(-5px, 0, 0); }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+@keyframes bounceInRight {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(3000px, 0, 0);
+    transform: translate3d(3000px, 0, 0); }
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(-25px, 0, 0);
+    transform: translate3d(-25px, 0, 0); }
+  75% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0); }
+  90% {
+    -webkit-transform: translate3d(-5px, 0, 0);
+    transform: translate3d(-5px, 0, 0); }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+a:hover {
+  text-decoration: none; }
+
+html, body {
+  width: 100%;
+  height: 100%; }
+
+body {
+  position: relative; }
+
+.web {
+  font-family: "Century Gothic";
+  width: 100%; }
+  .web .main {
+    padding-top: 100px; }
+    .web .main .swiper {
+      width: 80%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .web .main .swiper .threeLoop {
+        width: 450px;
+        overflow: hidden;
+        padding-top: 20px;
+        padding-bottom: 20px; }
+        .web .main .swiper .threeLoop .loop_ul {
+          display: inline-block;
+          font-size: 0;
+          transition: all 0.5s; }
+          .web .main .swiper .threeLoop .loop_ul > li {
+            display: inline-block;
+            width: 150px;
+            height: 200px;
+            position: relative;
+            cursor: pointer;
+            overflow: hidden;
+            vertical-align: middle; }
+            .web .main .swiper .threeLoop .loop_ul > li .loopName {
+              height: 35px;
+              width: 100%;
+              background: rgba(0, 0, 0, 0.6);
+              position: absolute;
+              top: 0;
+              left: 0;
+              z-index: 1;
+              transition: all 0.5s;
+              overflow: hidden;
+              /*超出部分隐藏*/
+              white-space: nowrap;
+              /*不换行*/
+              text-overflow: ellipsis;
+              /*超出部分文字以...显示*/
+              padding-left: 5px;
+              padding-right: 5px;
+              box-sizing: border-box; }
+              .web .main .swiper .threeLoop .loop_ul > li .loopName span {
+                display: inline-block;
+                width: 100%;
+                height: 35px;
+                line-height: 35px;
+                vertical-align: middle;
+                text-align: center;
+                color: #FFFFFF;
+                font-weight: bold;
+                font-size: 14px;
+                letter-spacing: 1px; }
+            .web .main .swiper .threeLoop .loop_ul > li .loopName:hover {
+              background: rgba(0, 0, 0, 0.7); }
+            .web .main .swiper .threeLoop .loop_ul > li .loopImg {
+              width: 100%;
+              height: 100%;
+              position: relative;
+              font-size: 0; }
+              .web .main .swiper .threeLoop .loop_ul > li .loopImg > img {
+                width: 100%;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%); }
+    .web .main .device {
+      width: 446px;
+      height: 205px;
+      padding: 30px 40px;
+      border-radius: 20px;
+      background: #5F9EA0;
+      border: 3px solid white;
+      margin: 5px auto;
+      position: relative;
+      box-shadow: 0px 0px 5px #000; }
+      .web .main .device .arrow-left {
+        background: url(../images/arrows.png) no-repeat left top;
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        margin-top: -15px;
+        width: 17px;
+        height: 30px; }
+      .web .main .device .arrow-right {
+        background: url(../images/arrows.png) no-repeat left bottom;
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        margin-top: -15px;
+        width: 17px;
+        height: 30px; }
+      .web .main .device .swiper-container {
+        width: 360px;
+        height: 140px; }
+        .web .main .device .swiper-container .swiper-wrapper {
+          width: 100%; }
+          .web .main .device .swiper-container .swiper-wrapper .swiper-slide {
+            width: 100%; }
+            .web .main .device .swiper-container .swiper-wrapper .swiper-slide img {
+              width: 100%; }
+      .web .main .device .pagination {
+        position: absolute;
+        left: 0;
+        text-align: center;
+        bottom: 5px;
+        width: 100%;
+        margin: 0; }
+        .web .main .device .pagination .swiper-pagination-switch {
+          display: inline-block;
+          width: 10px;
+          height: 10px;
+          border-radius: 10px;
+          background: #000;
+          opacity: 0.5;
+          margin: 0 3px;
+          cursor: pointer; }
+        .web .main .device .pagination .swiper-active-switch {
+          width: 20px;
+          height: 10px;
+          background: #FFFFFF;
+          border: 1px solid #fff;
+          border-radius: 11px;
+          opacity: 1; }
+    .web .main .hot {
+      width: 80%;
+      margin: 0 auto;
+      margin-top: 40px; }
+      .web .main .hot .hot_title {
+        border-bottom: 2px solid skyblue;
+        margin-bottom: 30px;
+        position: relative; }
+        .web .main .hot .hot_title > p {
+          width: 13%;
+          color: white;
+          background: skyblue;
+          font-size: 22px;
+          font-weight: bold;
+          text-align: center;
+          padding-top: 3px;
+          padding-bottom: 3px;
+          border-top-left-radius: 8px;
+          border-top-right-radius: 8px;
+          letter-spacing: 3px; }
+        .web .main .hot .hot_title .change {
+          position: absolute;
+          right: 8%;
+          top: 8px; }
+          .web .main .hot .hot_title .change > a {
+            display: inline-block;
+            width: 100%; }
+        .web .main .hot .hot_title .more {
+          position: absolute;
+          right: 0;
+          top: 8px; }
+      .web .main .hot .hotBlock {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        flex-wrap: wrap; }
+        .web .main .hot .hotBlock .hotBook {
+          width: 16%; }
+          .web .main .hot .hotBlock .hotBook > a {
+            display: inline-block;
+            width: 100%; }
+            .web .main .hot .hotBlock .hotBook > a .hotBookImg {
+              width: 100%; }
+              .web .main .hot .hotBlock .hotBook > a .hotBookImg > img {
+                width: 100%;
+                transition: all 0.3s;
+                border-radius: 8px; }
+              .web .main .hot .hotBlock .hotBook > a .hotBookImg > img:hover {
+                transform: translateY(-10px);
+                cursor: pointer; }
+            .web .main .hot .hotBlock .hotBook > a .hotBookIntro {
+              margin-top: 5px;
+              text-align: center;
+              font-size: 16px; }
+            .web .main .hot .hotBlock .hotBook > a .hotBookIntro:hover {
+              color: darkred; }
+    .web .main .new {
+      width: 80%;
+      margin: 0 auto;
+      margin-top: 40px; }
+      .web .main .new .new_title {
+        border-bottom: 2px solid skyblue;
+        margin-bottom: 15px;
+        position: relative; }
+        .web .main .new .new_title > p {
+          width: 13%;
+          color: white;
+          background: skyblue;
+          font-size: 22px;
+          font-weight: bold;
+          text-align: center;
+          padding-top: 3px;
+          padding-bottom: 3px;
+          border-top-left-radius: 8px;
+          border-top-right-radius: 8px;
+          letter-spacing: 3px; }
+        .web .main .new .new_title .change {
+          position: absolute;
+          right: 8%;
+          top: 8px; }
+          .web .main .new .new_title .change > a {
+            display: inline-block;
+            width: 100%; }
+        .web .main .new .new_title .more {
+          position: absolute;
+          right: 0;
+          top: 8px; }
+      .web .main .new .newBlock {
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        flex-wrap: wrap; }
+        .web .main .new .newBlock .newBook {
+          width: 40%;
+          margin-bottom: 20px; }
+          .web .main .new .newBlock .newBook > a {
+            display: flex;
+            width: 100%;
+            color: skyblue; }
+            .web .main .new .newBlock .newBook > a .newBookImg {
+              width: 35%;
+              border-radius: 8px;
+              overflow: hidden;
+              box-shadow: 3px 3px 4px grey; }
+              .web .main .new .newBlock .newBook > a .newBookImg > img {
+                width: 100%;
+                transition: all 0.5s; }
+              .web .main .new .newBlock .newBook > a .newBookImg > img:hover {
+                transform: scale(1.05);
+                cursor: pointer; }
+            .web .main .new .newBlock .newBook > a .newBookIntro {
+              width: 65%;
+              box-sizing: border-box;
+              padding-left: 3%;
+              display: flex;
+              justify-content: center;
+              flex-direction: column; }
+              .web .main .new .newBlock .newBook > a .newBookIntro > p {
+                margin-bottom: 10px; }
+              .web .main .new .newBlock .newBook > a .newBookIntro > p:last-of-type {
+                margin-bottom: 0; }
+              .web .main .new .newBlock .newBook > a .newBookIntro > p:hover {
+                color: darkred; }
+          .web .main .new .newBlock .newBook > a:hover {
+            color: skyblue; }
+    .web .main .classify {
+      width: 80%;
+      margin: 0 auto;
+      margin-top: 40px;
+      margin-bottom: 30px; }
+      .web .main .classify .classify_title {
+        border-bottom: 2px solid skyblue;
+        margin-bottom: 20px;
+        position: relative; }
+        .web .main .classify .classify_title > p {
+          width: 13%;
+          color: white;
+          background: skyblue;
+          font-size: 22px;
+          font-weight: bold;
+          text-align: center;
+          padding-top: 3px;
+          padding-bottom: 3px;
+          border-top-left-radius: 8px;
+          border-top-right-radius: 8px;
+          letter-spacing: 3px; }
+      .web .main .classify .classify_block {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0 auto; }
+        .web .main .classify .classify_block .block {
+          width: 22%; }
+          .web .main .classify .classify_block .block .block_title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px; }
+            .web .main .classify .classify_block .block .block_title .classify_block_title {
+              font-size: 24px; }
+            .web .main .classify .classify_block .block .block_title .classify_block_title::after {
+              content: "";
+              display: block;
+              width: 60px;
+              height: 4px;
+              margin-top: 3px;
+              background: skyblue; }
+            .web .main .classify .classify_block .block .block_title .classify_block_more {
+              font-size: 14px; }
+          .web .main .classify .classify_block .block .classify_block_list {
+            overflow: hidden;
+            padding-left: 2%;
+            padding-right: 2%; }
+            .web .main .classify .classify_block .block .classify_block_list li {
+              margin-bottom: 25px; }
+              .web .main .classify .classify_block .block .classify_block_list li .classify_block_book_list {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 5px; }
+                .web .main .classify .classify_block .block .classify_block_list li .classify_block_book_list > p {
+                  font-size: 16px; }
+                .web .main .classify .classify_block .block .classify_block_list li .classify_block_book_list > p:last-of-type {
+                  font-size: 14px; }
+              .web .main .classify .classify_block .block .classify_block_list li .classify_block_book_intro {
+                display: flex;
+                justify-content: space-between;
+                align-items: center; }
+                .web .main .classify .classify_block .block .classify_block_list li .classify_block_book_intro .classify_block_book_intro_img {
+                  width: 40%;
+                  border-radius: 4px;
+                  overflow: hidden; }
+                  .web .main .classify .classify_block .block .classify_block_list li .classify_block_book_intro .classify_block_book_intro_img img {
+                    width: 100%; }
+                .web .main .classify .classify_block .block .classify_block_list li .classify_block_book_intro > p {
+                  font-size: 14px;
+                  width: 57%;
+                  text-align: justify; }
+
+/*# sourceMappingURL=index.css.map */

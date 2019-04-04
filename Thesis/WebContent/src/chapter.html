@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>白读网站——文章页</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+    	<link rel="stylesheet" href="css/idangerous.swiper.css" />
+		<link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_1041223_7w1g14qnk1.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+ 		<link rel="stylesheet" type="text/css" href="css/chapter.css" /> 
+	</head>
+	<body>
+		<div class="web">
+			<!--头部-->
+			<header>
+				<a href="index.html" class="webLogo"><img src="images/logo.jpg" class="header_img"/></a>
+				<div class="webForm">
+					<form action="" method="post">
+						<input type="text" name="find" placeholder="搜索你感兴趣的小说/作者" />
+						<button type="submit" value="" class="iconfont icon-sousuo icon"></button>
+					</form>
+				</div>
+				<a href="#" class="webRegist"><i class="iconfont icon-daohang icon"></i>登录</a>
+			</header>
+			<div class="main">
+				<!--导航栏-->
+				<nav>
+					<ul class="navUl">
+						<li><a href="#">首页</a></li>
+						<li>
+							<a href="#">书库</a>
+							<ul class="navLiUl">
+								<li><a href="#">热门推荐</a></li>
+								<li><a href="#">新书推荐</a></li>
+								<li><a href="#">分类推荐</a></li>
+							</ul>
+						</li>
+						<li><a href="#">作者专区</a></li>
+						<li><a href="#">个人中心</a></li>
+					</ul>
+				</nav>
+				
+				<!--小说情况-->
+				<div class="chapter"></div>
+				
+				<!--小说章节列表-->
+				<div class="novel_chapter">
+					<div class="title">
+						<a href="###">
+							<span>武炼丹尊</span>
+							<span>章节目录</span>
+						</a>
+					</div>
+					<div class="list">
+						<p><a href="###">第10章 宁死不从</a></p>
+						<p><a href="###">第9章 你来报仇吧</a></p>
+						<p><a href="###">第8章 继续试炼</a></p>
+						<p><a href="###">第7章 战天鬼将现身</a></p>
+						<p><a href="###">第6章 尸鬼宗的副宗主</a></p>
+						<p><a href="###">第5章 命牌显神威</a></p>
+						<p><a href="###">第4章 还请前辈赐教</a></p>
+						<p><a href="###">第3章 这一剑的风华（下）</a></p>
+						<p><a href="###">第2章 这一剑的风华（上）</a></p>
+						<p><a href="###">第1章 苏凌，死了</a></p>
+					</div>
+					<div class="button">
+						<span>查看全部章节</span>
+					</div>
+				</div>
+				
+				<!--小说评论区-->
+				<div class="comment">
+					<div class="title">
+						<span>评论区</span>
+					</div>
+				</div>
+			</div>
+			
+			<footer>
+				<!--友情链接-->
+				<div class="link">
+					<p class="link_title">友情链接：</p>
+					<div class="link_list">
+						<a href="###">逐浪小说网</a>
+						<a href="###">快看漫画</a>
+						<a href="###">起点小说网</a>
+						<a href="###">腾讯文学</a>
+						<a href="###">百度阅读</a>
+						<a href="###">网易云阅读</a>
+						<a href="###">晋江文学城</a>
+						<a href="###">潇湘书院</a>
+						<a href="###">塔读文学</a>
+						<a href="###">小说阅读网</a>
+						<a href="###">红袖香添</a>
+						<a href="###">17k小说网</a>
+						<a href="###">创世中文网</a>
+						<a href="###">掌阅</a>
+						<a href="###">虾米音乐</a>
+						<a href="###">QQ音乐</a>
+						<a href="###">网易云音乐</a>
+						<a href="###">酷我音乐</a>
+					</div>
+				</div>
+				<!--关于白读-->
+				<div class="about">
+					<ul>
+						<li><a href="###">关于白读</a></li>
+						<li><a href="###">服务条款</a></li>
+						<li><a href="###">版权声明</a></li>
+						<li><a href="###">网站地图</a></li>
+						<li><a href="###">招聘信息</a></li>
+						<li><a href="###">联系我们</a></li>
+					</ul>
+				</div>
+				<div class="intro">
+					<p>南京大众书网图书文化有限公司 粤ICP备XXXXXX号 020-XXXXXXXX</p>
+					<p>白读小说版权所有，未经许可不得转载</p>
+				</div>
+			</footer>
+			
+			<!--回到顶部-->
+			<div class="top">
+				<i class="iconfont icon-zhiding"></i>
+			</div>
+		</div>
+		
+		<!--登录注册页面-->
+		<div class="regist">
+			<div class="form login_form">
+				<div class="close"><i class="iconfont icon-daohang icon"></i></div>
+				<form autocomplete="off" id="loginForm">
+					<label>
+						<span>手机号：</span>
+						<input type="text" name="login_phone" id="login_phone" placeholder="请输入手机号" />
+					</label>
+					<label>
+						<span>密码：</span>
+						<input type="password" name="login_password" id="login_password" placeholder="请输入密码" />
+					</label>
+					<div class="form_btn">
+						<input type="button" value="点击登录" id="loginSend"></input>
+						<a href="###" class="regist_btn">尚无账号，点击注册</a>
+					</div>
+				</form>
+			</div>
+			<div class="form regist_form">
+				<div class="close"><i class="iconfont icon-daohang icon"></i></div>	
+				<form autocomplete="off" id="registForm">
+					<label>
+						<span>用户名：</span>
+						<input type="text" name="regist_name" id="regist_name" placeholder="请输入用户名" />
+					</label>
+					<label>
+						<span>密码：</span>
+						<input type="password" name="regist_password1" id="regist_password1" placeholder="请输入密码" />
+					</label>
+					<label>
+						<span>确认密码：</span>
+						<input type="password" name="regist_password2" id="regist_password2" placeholder="请再次输入密码" />
+					</label>
+					<label>
+						<span>手机号：</span>
+						<input type="text" name="regist_phone" id="regist_phone" placeholder="请输入手机号" />
+					</label>
+					<div class="verity">
+						<div class="verifycode">点击发送验证码</div>
+						<input type="text" name="regist_code" id="regist_code" placeholder="请输入验证码" />
+					</div>
+					<div class="form_btn">
+						<input type="button" value="点击注册" id="registSend"></input>
+					</div>
+				</form>
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="js/jquery-1.10.1.min.js" ></script>
+ 		<script type="text/javascript" src="js/common.js" ></script> 
+ 		<script type="text/javascript" src="js/regist.js" ></script> 
+		<script type="text/javascript" src="js/chapter.js" ></script>
+	</body>
+</html>
