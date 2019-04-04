@@ -1,10 +1,242 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-</head>
-<body>
-
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<title>白读首页</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+    	<link rel="stylesheet" href="css/idangerous.swiper.css" />
+		<link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_1041223_7w1g14qnk1.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+	</head>
+	<body>
+		<div class="web">
+			<!--头部-->
+			<header>
+				<a href="index.html" class="webLogo"><img src="images/logo.jpg" class="header_img"/></a>
+				<div class="webForm">
+					<form action="" method="post">
+						<input type="text" name="find" placeholder="搜索你感兴趣的小说/作者" />
+						<button type="submit" value="" class="iconfont icon-sousuo icon"></button>
+					</form>
+				</div>
+				<a href="#" class="webRegist"><i class="iconfont icon-daohang icon"></i>登录</a>
+			</header>
+			<div class="main">
+				<!--导航栏-->
+				<nav>
+					<ul class="navUl">
+						<li><a href="#">首页</a></li>
+						<li>
+							<a href="#">书库</a>
+							<ul class="navLiUl">
+								<li><a href="#">热门推荐</a></li>
+								<li><a href="#">新书推荐</a></li>
+								<li><a href="#">分类推荐</a></li>
+							</ul>
+						</li>
+						<li><a href="#">作者专区</a></li>
+						<li><a href="#">个人中心</a></li>
+					</ul>
+				</nav>
+				
+				<!--轮播图-->
+				<div class="swiper">
+					<!--三图轮播-->
+					<div class="threeLoop">
+						<ul class="loop_ul"></ul>
+					</div>
+					<!--滚动轮播图-->
+				    <div class="device">
+						<a class="arrow-left" href="#"></a>
+						<a class="arrow-right" href="#"></a>
+						<div class="swiper-container">
+							<div class="swiper-wrapper"></div>
+						</div>
+						<div class="pagination"></div>
+					</div>
+				</div>
+			    
+			    <!--热门推荐-->
+			    <div class="hot">
+			    	<div class="hot_title">
+			    		<p>热门<span style="font-size: 18px;">推荐</span></p>
+			    		<div class="change">
+			    			<a href="###">
+			    				<i class="iconfont icon-daohang icon"></i>
+			    				<span>换一批</span>
+			    			</a>
+			    		</div>
+			    		<div class="more">
+			    			<a href="###">
+			    				<i class="iconfont icon-daohang icon"></i>
+			    				<span>更多</span>
+			    			</a>
+			    		</div>
+			    	</div>
+			    	<div class="hotBlock"></div>
+			    </div>
+			
+				<!--新书推荐-->
+				<div class="new">
+					<div class="new_title">
+			    		<p>新书<span style="font-size: 18px;">推荐</span></p>
+			    		<div class="change">
+			    			<a href="###">
+			    				<i class="iconfont icon-daohang icon"></i>
+			    				<span>换一批</span>
+			    			</a>
+			    		</div>
+			    		<div class="more">
+			    			<a href="###">
+			    				<i class="iconfont icon-daohang icon"></i>
+			    				<span>更多</span>
+			    			</a>
+			    		</div>
+			    	</div>
+			    	<div class="newBlock"></div>
+				</div>
+			
+				<!--分类推荐-->
+				<div class="classify">
+					<div class="classify_title">
+			    		<p>分类<span style="font-size: 18px;">推荐</span></p>
+			    	</div>
+			    	<div class="classify_block">
+			    		<div class="block">
+			    			<div class="block_title">
+			    				<p class="classify_block_title">武侠仙侠</p>
+			    				<a href="###" class="classify_block_more">更多</a>
+			    			</div>
+			    			<div class="classify_block_list"></div>
+			    		</div>
+			    		<div class="block">
+			    			<div class="block_title">
+			    				<p class="classify_block_title">玄幻</p>
+			    				<a href="###" class="classify_block_more">更多</a>
+			    			</div>
+			    			<div class="classify_block_list"></div>
+			    		</div>
+			    		<div class="block">
+			    			<div class="block_title">
+			    				<p class="classify_block_title">现代言情</p>
+			    				<a href="###" class="classify_block_more">更多</a>
+			    			</div>
+			    			<div class="classify_block_list"></div>
+			    		</div>
+			    		<div class="block">
+			    			<div class="block_title">
+			    				<p class="classify_block_title">古代言情</p>
+			    				<a href="###" class="classify_block_more">更多</a>
+			    			</div>
+			    			<div class="classify_block_list"></div>
+			    		</div>
+			    	</div>
+				</div>
+			</div>
+			<footer>
+				<!--友情链接-->
+				<div class="link">
+					<p class="link_title">友情链接：</p>
+					<div class="link_list">
+						<a href="###">逐浪小说网</a>
+						<a href="###">快看漫画</a>
+						<a href="###">起点小说网</a>
+						<a href="###">腾讯文学</a>
+						<a href="###">百度阅读</a>
+						<a href="###">网易云阅读</a>
+						<a href="###">晋江文学城</a>
+						<a href="###">潇湘书院</a>
+						<a href="###">塔读文学</a>
+						<a href="###">小说阅读网</a>
+						<a href="###">红袖香添</a>
+						<a href="###">17k小说网</a>
+						<a href="###">创世中文网</a>
+						<a href="###">掌阅</a>
+						<a href="###">虾米音乐</a>
+						<a href="###">QQ音乐</a>
+						<a href="###">网易云音乐</a>
+						<a href="###">酷我音乐</a>
+					</div>
+				</div>
+				<!--关于白读-->
+				<div class="about">
+					<ul>
+						<li><a href="###">关于白读</a></li>
+						<li><a href="###">服务条款</a></li>
+						<li><a href="###">版权声明</a></li>
+						<li><a href="###">网站地图</a></li>
+						<li><a href="###">招聘信息</a></li>
+						<li><a href="###">联系我们</a></li>
+					</ul>
+				</div>
+				<div class="intro">
+					<p>南京大众书网图书文化有限公司 粤ICP备XXXXXX号 020-XXXXXXXX</p>
+					<p>白读小说版权所有，未经许可不得转载</p>
+				</div>
+			</footer>
+			
+			<!--回到顶部-->
+			<div class="top">
+				<i class="iconfont icon-zhiding"></i>
+			</div>
+		</div>
+		
+		<!--登录注册页面-->
+		<div class="regist">
+			<div class="form login_form">
+				<div class="close"><i class="iconfont icon-daohang icon"></i></div>
+				<form autocomplete="off" id="loginForm">
+					<label>
+						<span>手机号：</span>
+						<input type="text" name="login_phone" id="login_phone" placeholder="请输入手机号" />
+					</label>
+					<label>
+						<span>密码：</span>
+						<input type="password" name="login_password" id="login_password" placeholder="请输入密码" />
+					</label>
+					<div class="form_btn">
+						<input type="button" value="点击登录" id="loginSend"></input>
+						<a href="###" class="regist_btn">尚无账号，点击注册</a>
+					</div>
+				</form>
+			</div>
+			<div class="form regist_form">
+				<div class="close"><i class="iconfont icon-daohang icon"></i></div>	
+				<form autocomplete="off" id="registForm">
+					<label>
+						<span>用户名：</span>
+						<input type="text" name="regist_name" id="regist_name" placeholder="请输入用户名" />
+					</label>
+					<label>
+						<span>密码：</span>
+						<input type="password" name="regist_password1" id="regist_password1" placeholder="请输入密码" />
+					</label>
+					<label>
+						<span>确认密码：</span>
+						<input type="password" name="regist_password2" id="regist_password2" placeholder="请再次输入密码" />
+					</label>
+					<label>
+						<span>手机号：</span>
+						<input type="text" name="regist_phone" id="regist_phone" placeholder="请输入手机号" />
+					</label>
+					<div class="verity">
+						<div class="verifycode">点击发送验证码</div>
+						<input type="text" name="regist_code" id="regist_code" placeholder="请输入验证码" />
+					</div>
+					<div class="form_btn">
+						<input type="button" value="点击注册" id="registSend"></input>
+					</div>
+				</form>
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="js/jquery-1.10.1.min.js" ></script>
+		<script type="text/javascript" src="js/idangerous.swiper.js" ></script>
+		<script type="text/javascript" src="js/common.js" ></script>
+		<script type="text/javascript" src="js/index.js" ></script>
+		<script type="text/javascript" src="js/regist.js" ></script>
+		<script type="text/javascript" src="js/novel.js" ></script>
+	</body>
 </html>
